@@ -58,5 +58,11 @@ namespace AccountApp.Views
             ProductEntry productEntry = new ProductEntry(); 
             productEntry.Show();
         }
+
+        private void salePostingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PostSale ps = new PostSale();
+            ps.ShowDialog();    
+        }
     }
 }
