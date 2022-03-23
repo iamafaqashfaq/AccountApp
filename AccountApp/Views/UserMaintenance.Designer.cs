@@ -176,7 +176,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "UserMaintenance";
-            this.Text = "UserMaintenance";
+            this.Text = "User Maintenance";
             this.ResumeLayout(false);
             this.PerformLayout();
 

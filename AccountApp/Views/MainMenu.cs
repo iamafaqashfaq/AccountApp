@@ -75,5 +75,11 @@ namespace AccountApp.Views
             SaleSummaryDateSelect saleSummaryDateSelect = new SaleSummaryDateSelect();
             saleSummaryDateSelect.ShowDialog();
         }
+
+        private void saleRecoveryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaleRecoveryDateSelect saleRecoveryDateSelect = new SaleRecoveryDateSelect();
+            saleRecoveryDateSelect.ShowDialog();
+        }
     }
 }

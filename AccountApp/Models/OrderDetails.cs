@@ -21,6 +21,7 @@ namespace AccountApp.Models
         public double Rate { get; set; }
         public double Commission { get; set; }
         public double TotalAmount { get { return (Rate * Quantity) + (Quantity * Commission); } set { } }
+        public bool Posted { get; set; }
         public Order? Order { get; set; }
         public Customer? Customer { get; set; }
         public Product? Product { get; set; }

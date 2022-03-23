@@ -129,7 +129,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "ProductEntry";
-            this.Text = "ProductEntry";
+            this.Text = "Product Entry";
             this.Load += new System.EventHandler(this.ProductEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

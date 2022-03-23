@@ -48,6 +48,7 @@ namespace AccountApp.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
+            custId = 0;
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
@@ -57,6 +58,7 @@ namespace AccountApp.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
+            custId = 0;
             using (var db = new DataContext())
             {
                 var cust = db.Customers.Where(u => u.Name == textBox1.Text).FirstOrDefault();
@@ -77,21 +79,32 @@ namespace AccountApp.Views
             }
         }
 
+        int custId = 0;
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            var customerID = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBox2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
-            textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
-            textBox4.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
-            textBox5.Text = dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
-            if (customerID != "")
+            if(e.RowIndex > -1)
             {
-                using(var db = new DataContext())
+                var customerID = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
+                custId = Convert.ToInt32(customerID);
+                textBox1.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBox2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+                textBox4.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
+                textBox5.Text = dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+                if (customerID != "")
                 {
-                    int id = Convert.ToInt32(customerID);
-                    var gl = db.GLTrans.Where(c => c.CustomerID == id).ToList();
-                    dataGridView1.DataSource = gl;
+                    using (var db = new DataContext())
+                    {
+                        int id = Convert.ToInt32(customerID);
+                        var gl = db.GLTrans.Where(c => c.CustomerID == id).Select(x => new
+                        {
+                            Date = x.TranDateTimeStamp,
+                            Detail = x.TranDetail.Replace('~',' '),
+                            Debit = x.Debit,   
+                            Credit = x.Credit,
+                        }).ToList();
+                        dataGridView1.DataSource = gl;
+                    }
                 }
             }
         }
@@ -100,19 +113,41 @@ namespace AccountApp.Views
         {
             using (var db = new DataContext()) 
             { 
-                Models.Customer cust = new Models.Customer();
-                cust.Name = textBox1.Text;
-                cust.Address = textBox2.Text;
-                cust.City = textBox3.Text;  
-                cust.Area = textBox5.Text;
-                cust.Phone = textBox4.Text;
-                db.Customers.Add(cust);
-                db.SaveChanges();
-                MessageBox.Show("Customer Created", "Success");
-                LoadCustomerControls();
-                int id = Convert.ToInt32(cust.Id);
-                var gl = db.GLTrans.Where(c => c.CustomerID == id).ToList();
-                dataGridView1.DataSource = gl;
+                if(custId != 0)
+                {
+                    var cust = db.Customers.FirstOrDefault(c => c.Id == custId);
+                    if(cust != null)
+                    {
+                        cust.Name = textBox1.Text;
+                        cust.Address = textBox2.Text;
+                        cust.City = textBox3.Text;
+                        cust.Area = textBox5.Text;
+                        cust.Phone = textBox4.Text;
+                        db.Customers.Update(cust);
+                        db.SaveChanges();
+                        LoadCustomerControls();
+                        int id = Convert.ToInt32(cust.Id);
+                        var gl = db.GLTrans.ToList();
+                        dataGridView1.DataSource = gl;
+                        custId = 0;
+                    }
+                }
+                else
+                {
+                    Models.Customer cust = new Models.Customer();
+                    cust.Name = textBox1.Text;
+                    cust.Address = textBox2.Text;
+                    cust.City = textBox3.Text;
+                    cust.Area = textBox5.Text;
+                    cust.Phone = textBox4.Text;
+                    db.Customers.Add(cust);
+                    db.SaveChanges();
+                    LoadCustomerControls();
+                    int id = Convert.ToInt32(cust.Id);
+                    var gl = db.GLTrans.ToList();
+                    dataGridView1.DataSource = gl;
+                }
+                
             }
         }
 
@@ -127,6 +162,11 @@ namespace AccountApp.Views
             {
                 textBox5.Text = check.AreaName; 
             }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

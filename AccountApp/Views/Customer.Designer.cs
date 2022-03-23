@@ -88,6 +88,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Details";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button3
             // 
@@ -107,7 +108,7 @@
             this.button2.Location = new System.Drawing.Point(56, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(42, 27);
-            this.button2.TabIndex = 14;
+            this.button2.TabIndex = 5;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -149,7 +150,7 @@
             this.textBox5.Location = new System.Drawing.Point(531, 52);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(155, 23);
-            this.textBox5.TabIndex = 10;
+            this.textBox5.TabIndex = 1;
             this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
             // 
             // label4
@@ -166,7 +167,7 @@
             this.textBox4.Location = new System.Drawing.Point(89, 107);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(155, 23);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.TabIndex = 4;
             // 
             // label3
             // 
@@ -182,7 +183,7 @@
             this.textBox3.Location = new System.Drawing.Point(531, 81);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(155, 23);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 3;
             // 
             // label2
             // 
@@ -198,7 +199,7 @@
             this.textBox2.Location = new System.Drawing.Point(89, 78);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(350, 23);
-            this.textBox2.TabIndex = 4;
+            this.textBox2.TabIndex = 2;
             // 
             // label1
             // 
@@ -229,6 +230,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(8, 34);
             this.dataGridView1.Name = "dataGridView1";

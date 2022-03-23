@@ -1,4 +1,5 @@
-﻿using Microsoft.Reporting.WinForms;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Reporting.WinForms;
 using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
 using System;
 using System.Collections.Generic;
@@ -28,21 +29,37 @@ namespace AccountApp.Views.ReportViews
 
         private void SaleSummaryView_Load(object sender, EventArgs e)
         {
-            //var items = new[] { new ReportItem { Description = "Widget 6000", Price = 104.99m, Qty = 1 }, new ReportItem { Description = "Gizmo MAX", Price = 1.41m, Qty = 25 } };
-            var parameters = new[] { new ReportParameter("Title", "Invoice 4/2020") };
-            using var fs = new FileStream("../../../Views/ReportViews/SaleSummaryReport.rdlc", FileMode.Open);
-            reportViewer1.LocalReport.LoadReportDefinition(fs);
-            //reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Items", items));
-            reportViewer1.LocalReport.SetParameters(parameters);
-            reportViewer1.RefreshReport();
+            using(var db = new DataContext())
+            {
+                var data = db.Orders.Include(p => p.Product).Where(c => c.OrderDate.Date == _date.Date).Select(x => new
+                {
+                    OrderNum = x.Id,
+                    Chalan = x.ChalanNumber,
+                    OrderDate = x.OrderDate.Date,
+                    Product = x.Product!.Name,
+                    QuantitySold = x.SoldQuantity,
+                    Sale = x.Sale,
+                    SaleRate = x.SaleRate,
+                    SaleWOCommission = x.SaleWithoutCommission,
+                    TotalQuantity = x.Quantity
+                }).ToList();
+                var ARData = db.GLTrans.Where(c => c.TranDate.Date == _date.Date && c.TranType == "AR").Sum(x=>x.Debit);
+                var totalRecovery = new
+                {
+                    TotalRecovery = ARData,
+                };
+
+                List<object> recoveryData = new List<object>();
+                recoveryData.Add(totalRecovery);
+                var parameters = new[] { new ReportParameter("Title", "Sale Summary") };
+                using var fs = new FileStream("../../../Views/ReportViews/SaleSummaryReport.rdlc", FileMode.Open);
+                reportViewer1.LocalReport.LoadReportDefinition(fs);
+                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", data));
+                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", recoveryData));
+                reportViewer1.LocalReport.SetParameters(parameters);
+                reportViewer1.RefreshReport();
+            }
+            
         }
     }
-
-    //public class ReportItem
-    //{
-    //    public string Description { get; set; } = String.Empty;
-    //    public decimal Price { get; set; }
-    //    public int Qty { get; set; }
-    //    public decimal Total => Price * Qty;
-    //}
 }

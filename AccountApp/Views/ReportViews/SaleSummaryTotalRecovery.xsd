@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SaleSummaryTotalRecovery" targetNamespace="http://tempuri.org/SaleSummaryTotalRecovery.xsd" xmlns:mstns="http://tempuri.org/SaleSummaryTotalRecovery.xsd" xmlns="http://tempuri.org/SaleSummaryTotalRecovery.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SaleSummaryTotalRecovery" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="SaleSummaryTotalRecovery" msprop:Generator_DataSetName="SaleSummaryTotalRecovery">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SaleSummaryTotalRecovery" msprop:Generator_RowEvHandlerName="SaleSummaryTotalRecoveryRowChangeEventHandler" msprop:Generator_RowDeletedName="SaleSummaryTotalRecoveryRowDeleted" msprop:Generator_RowDeletingName="SaleSummaryTotalRecoveryRowDeleting" msprop:Generator_RowEvArgName="SaleSummaryTotalRecoveryRowChangeEvent" msprop:Generator_TablePropName="_SaleSummaryTotalRecovery" msprop:Generator_RowChangedName="SaleSummaryTotalRecoveryRowChanged" msprop:Generator_RowChangingName="SaleSummaryTotalRecoveryRowChanging" msprop:Generator_TableClassName="SaleSummaryTotalRecoveryDataTable" msprop:Generator_RowClassName="SaleSummaryTotalRecoveryRow" msprop:Generator_TableVarName="tableSaleSummaryTotalRecovery" msprop:Generator_UserTableName="SaleSummaryTotalRecovery">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalRecovery" msprop:Generator_ColumnPropNameInRow="TotalRecovery" msprop:Generator_ColumnPropNameInTable="TotalRecoveryColumn" msprop:Generator_ColumnVarNameInTable="columnTotalRecovery" msprop:Generator_UserColumnName="TotalRecovery" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

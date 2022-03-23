@@ -1,6 +1,6 @@
 ﻿namespace AccountApp.Views.ReportViews
 {
-    partial class SaleSummaryView
+    partial class RecoveryReportView
     {
         /// <summary>
         /// Required designer variable.
@@ -39,14 +39,14 @@
             this.reportViewer1.Size = new System.Drawing.Size(396, 246);
             this.reportViewer1.TabIndex = 0;
             // 
-            // SaleSummaryView
+            // RecoveryReportView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "SaleSummaryView";
-            this.Text = "Sale Summary";
-            this.Load += new System.EventHandler(this.SaleSummaryView_Load);
+            this.ClientSize = new System.Drawing.Size(800, 464);
+            this.Name = "RecoveryReportView";
+            this.Text = "Recovery Report";
+            this.Load += new System.EventHandler(this.RecoveryReportView_Load);
             this.ResumeLayout(false);
 
         }

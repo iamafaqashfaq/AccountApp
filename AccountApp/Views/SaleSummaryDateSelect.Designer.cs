@@ -68,7 +68,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "SaleSummaryDateSelect";
-            this.Text = "SaleSummaryDateSelect";
+            this.Text = "Select Date";
             this.ResumeLayout(false);
             this.PerformLayout();
 

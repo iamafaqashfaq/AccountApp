@@ -141,7 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "OpeningGL";
-            this.Text = "OpeningGL";
+            this.Text = "Opening Balance";
             this.Load += new System.EventHandler(this.OpeningGL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

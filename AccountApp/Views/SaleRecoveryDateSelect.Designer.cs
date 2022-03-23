@@ -1,6 +1,6 @@
 ﻿namespace AccountApp.Views
 {
-    partial class PostSale
+    partial class SaleRecoveryDateSelect
     {
         /// <summary>
         /// Required designer variable.
@@ -28,50 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(544, 459);
-            this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(441, 486);
+            this.button1.Location = new System.Drawing.Point(224, 93);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Post";
+            this.button1.Size = new System.Drawing.Size(121, 49);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Preview";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // PostSale
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Select Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 52);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(223, 23);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // SaleRecoveryDateSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 532);
+            this.ClientSize = new System.Drawing.Size(379, 195);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.MaximizeBox = false;
-            this.Name = "PostSale";
-            this.Text = "Sale Posting";
-            this.Load += new System.EventHandler(this.PostSale_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Name = "SaleRecoveryDateSelect";
+            this.Text = "Recovery Date";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
         private Button button1;
+        private Label label1;
+        private DateTimePicker dateTimePicker1;
     }
 }

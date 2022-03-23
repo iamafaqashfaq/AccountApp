@@ -29,7 +29,7 @@ namespace AccountApp.Views
             using(var db = new DataContext())
             {
                 var data = db.OrderDetails.Include(c => c.Customer).Include(p => p.Product)
-                    .Include(o => o.Order).Where(o => o.Order!.Posted == false).OrderBy(c => c.CustomerID).Select(x => new
+                    .Include(o => o.Order).Where(o => o.Posted == false).OrderBy(c => c.CustomerID).Select(x => new
                     {
                         OrderNum = x.OrderNum,
                         Customer = x.Customer!.Name,
@@ -45,7 +45,7 @@ namespace AccountApp.Views
             using(var db = new DataContext())
             {
                 var data = db.OrderDetails.Include(c => c.Customer).Include(p => p.Product)
-                    .Include(o => o.Order).Where(o => o.Order!.Posted == false).OrderBy(c => c.CustomerID).Select(x => new
+                    .Include(o => o.Order).Where(o => o.Posted == false).OrderBy(c => c.CustomerID).Select(x => new
                     {
                         CustomerID = x.CustomerID,
                         OrderNum = x.OrderNum,
@@ -56,7 +56,7 @@ namespace AccountApp.Views
 
                 
 
-                var customers = db.OrderDetails.Include(o => o.Order).Where(o => o.Order!.Posted == false).OrderBy(c => c.CustomerID).Select(x => x.CustomerID).Distinct().ToList();
+                var customers = db.OrderDetails.Include(o => o.Order).Where(o => o.Posted == false).OrderBy(c => c.CustomerID).Select(x => x.CustomerID).Distinct().ToList();
                 foreach (var customer in customers)
                 {
                     string purchasedProduct = "";
@@ -80,7 +80,7 @@ namespace AccountApp.Views
                 }
                 foreach(var item in data)
                 {
-                    var order = db.Orders.FirstOrDefault(u => u.Id == item.OrderNum);
+                    var order = db.OrderDetails.FirstOrDefault(u => u.Id == item.OrderNum);
                     if(order != null)
                     {
                         order.Posted = true;

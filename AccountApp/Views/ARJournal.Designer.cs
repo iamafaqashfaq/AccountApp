@@ -176,7 +176,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ARJournal";
-            this.Text = "ARJournal";
+            this.Text = "Account Recovery";
             this.Load += new System.EventHandler(this.ARJournal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

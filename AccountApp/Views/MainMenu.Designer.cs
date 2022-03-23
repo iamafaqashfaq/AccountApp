@@ -38,10 +38,11 @@
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salePostingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleRecoveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.saleSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,18 +116,33 @@
             // salePostingToolStripMenuItem
             // 
             this.salePostingToolStripMenuItem.Name = "salePostingToolStripMenuItem";
-            this.salePostingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salePostingToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.salePostingToolStripMenuItem.Text = "Sale Posting";
             this.salePostingToolStripMenuItem.Click += new System.EventHandler(this.salePostingToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saleSummaryToolStripMenuItem});
+            this.saleSummaryToolStripMenuItem,
+            this.saleRecoveryToolStripMenuItem});
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.reportsToolStripMenuItem.Text = "Reports";
             this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
+            // 
+            // saleSummaryToolStripMenuItem
+            // 
+            this.saleSummaryToolStripMenuItem.Name = "saleSummaryToolStripMenuItem";
+            this.saleSummaryToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.saleSummaryToolStripMenuItem.Text = "Sale Summary";
+            this.saleSummaryToolStripMenuItem.Click += new System.EventHandler(this.saleSummaryToolStripMenuItem_Click);
+            // 
+            // saleRecoveryToolStripMenuItem
+            // 
+            this.saleRecoveryToolStripMenuItem.Name = "saleRecoveryToolStripMenuItem";
+            this.saleRecoveryToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.saleRecoveryToolStripMenuItem.Text = "Sale Recovery";
+            this.saleRecoveryToolStripMenuItem.Click += new System.EventHandler(this.saleRecoveryToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -170,13 +186,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // saleSummaryToolStripMenuItem
-            // 
-            this.saleSummaryToolStripMenuItem.Name = "saleSummaryToolStripMenuItem";
-            this.saleSummaryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saleSummaryToolStripMenuItem.Text = "Sale Summary";
-            this.saleSummaryToolStripMenuItem.Click += new System.EventHandler(this.saleSummaryToolStripMenuItem_Click);
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -188,7 +197,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainMenu";
-            this.Text = "MainMenu";
+            this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -212,5 +221,6 @@
         private ToolStripMenuItem salePostingToolStripMenuItem;
         private ToolStripMenuItem reportsToolStripMenuItem;
         private ToolStripMenuItem saleSummaryToolStripMenuItem;
+        private ToolStripMenuItem saleRecoveryToolStripMenuItem;
     }
 }

@@ -352,7 +352,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "SaleOrderEntry";
-            this.Text = "SaleOrderEntry";
+            this.Text = "Sale Order Entry";
             this.Load += new System.EventHandler(this.SaleOrderEntry_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
