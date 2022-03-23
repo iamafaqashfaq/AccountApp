@@ -14,9 +14,11 @@ namespace AccountApp.Views.ReportViews
 {
     public partial class SaleSummaryView : Form
     {
-        public SaleSummaryView()
+        DateTime _date;
+        public SaleSummaryView(DateTime date)
         {
             InitializeComponent();
+            this._date = date;
             Text = "Report viewer";
             WindowState = FormWindowState.Maximized;
             reportViewer1 = new ReportViewer();
@@ -26,29 +28,21 @@ namespace AccountApp.Views.ReportViews
 
         private void SaleSummaryView_Load(object sender, EventArgs e)
         {
-            Report.Load(reportViewer1.LocalReport);
+            //var items = new[] { new ReportItem { Description = "Widget 6000", Price = 104.99m, Qty = 1 }, new ReportItem { Description = "Gizmo MAX", Price = 1.41m, Qty = 25 } };
+            var parameters = new[] { new ReportParameter("Title", "Invoice 4/2020") };
+            using var fs = new FileStream("../../../Views/ReportViews/SaleSummaryReport.rdlc", FileMode.Open);
+            reportViewer1.LocalReport.LoadReportDefinition(fs);
+            //reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Items", items));
+            reportViewer1.LocalReport.SetParameters(parameters);
             reportViewer1.RefreshReport();
         }
     }
 
-    class Report
-    {
-        public static void Load(LocalReport report)
-        {
-            var items = new[] { new ReportItem { Description = "Widget 6000", Price = 104.99m, Qty = 1 }, new ReportItem { Description = "Gizmo MAX", Price = 1.41m, Qty = 25 } };
-            var parameters = new[] { new ReportParameter("Title", "Invoice 4/2020") };
-            using var fs = new FileStream("../../../Views/ReportViews/Report.rdlc", FileMode.Open);
-            report.LoadReportDefinition(fs);
-            report.DataSources.Add(new ReportDataSource("Items", items));
-            report.SetParameters(parameters);
-        }
-    }
-
-    public class ReportItem
-    {
-        public string Description { get; set; } = String.Empty;
-        public decimal Price { get; set; }
-        public int Qty { get; set; }
-        public decimal Total => Price * Qty;
-    }
+    //public class ReportItem
+    //{
+    //    public string Description { get; set; } = String.Empty;
+    //    public decimal Price { get; set; }
+    //    public int Qty { get; set; }
+    //    public decimal Total => Price * Qty;
+    //}
 }

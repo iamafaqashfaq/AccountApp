@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Views\ReportViews\Report.rdlc">
+    <None Update="Views\ReportViews\SaleSummaryReport.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

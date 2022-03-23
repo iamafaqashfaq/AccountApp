@@ -64,5 +64,16 @@ namespace AccountApp.Views
             PostSale ps = new PostSale();
             ps.ShowDialog();    
         }
+
+        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saleSummaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaleSummaryDateSelect saleSummaryDateSelect = new SaleSummaryDateSelect();
+            saleSummaryDateSelect.ShowDialog();
+        }
     }
 }
