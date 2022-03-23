@@ -137,11 +137,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(471, 55);
+            this.label5.Location = new System.Drawing.Point(476, 55);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.Size = new System.Drawing.Size(33, 15);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Area";
+            this.label5.Text = "علاقہ";
             // 
             // textBox5
             // 
@@ -156,11 +156,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 110);
+            this.label4.Location = new System.Drawing.Point(35, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
+            this.label4.Size = new System.Drawing.Size(27, 15);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Phone";
+            this.label4.Text = "فون";
             // 
             // textBox4
             // 
@@ -172,11 +172,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(471, 84);
+            this.label3.Location = new System.Drawing.Point(481, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "City";
+            this.label3.Text = "شہر";
             // 
             // textBox3
             // 
@@ -188,11 +188,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 81);
+            this.label2.Location = new System.Drawing.Point(35, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.Size = new System.Drawing.Size(21, 15);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Address";
+            this.label2.Text = "پتہ";
             // 
             // textBox2
             // 
@@ -204,11 +204,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 52);
+            this.label1.Location = new System.Drawing.Point(35, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.Size = new System.Drawing.Size(21, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Name";
+            this.label1.Text = "نام";
             // 
             // textBox1
             // 

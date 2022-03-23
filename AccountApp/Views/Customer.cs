@@ -41,7 +41,12 @@ namespace AccountApp.Views
                 var cust = db.Customers.ToList();
                 dataGridView2.DataSource = cust;
                 ////dataGridView2.Columns[0].Visible = false;
-                dataGridView2.Columns[0].HeaderText = "Code";
+                dataGridView2.Columns[0].HeaderText = "گاہک کوڈ";
+                dataGridView2.Columns[1].HeaderText = "گاہک";
+                dataGridView2.Columns[2].HeaderText = "پتہ";
+                dataGridView2.Columns[3].HeaderText = "شہر";
+                dataGridView2.Columns[4].HeaderText = "فون";
+                dataGridView2.Columns[5].HeaderText = "علاقہ";
             }
            
         }
@@ -104,6 +109,10 @@ namespace AccountApp.Views
                             Credit = x.Credit,
                         }).ToList();
                         dataGridView1.DataSource = gl;
+                        dataGridView1.Columns[0].HeaderText = "تاریخ";
+                        dataGridView1.Columns[1].HeaderText = "تفصیل";
+                        dataGridView1.Columns[2].HeaderText = "جمع";
+                        dataGridView1.Columns[3].HeaderText = "بنام";
                     }
                 }
             }
@@ -127,8 +136,18 @@ namespace AccountApp.Views
                         db.SaveChanges();
                         LoadCustomerControls();
                         int id = Convert.ToInt32(cust.Id);
-                        var gl = db.GLTrans.ToList();
+                        var gl = db.GLTrans.Where(c => c.CustomerID == id).Select(x => new
+                        {
+                            Date = x.TranDateTimeStamp,
+                            Detail = x.TranDetail.Replace('~', ' '),
+                            Debit = x.Debit,
+                            Credit = x.Credit,
+                        }).ToList();
                         dataGridView1.DataSource = gl;
+                        dataGridView1.Columns[0].HeaderText = "تاریخ";
+                        dataGridView1.Columns[1].HeaderText = "تفصیل";
+                        dataGridView1.Columns[2].HeaderText = "جمع";
+                        dataGridView1.Columns[3].HeaderText = "بنام";
                         custId = 0;
                     }
                 }
@@ -144,8 +163,18 @@ namespace AccountApp.Views
                     db.SaveChanges();
                     LoadCustomerControls();
                     int id = Convert.ToInt32(cust.Id);
-                    var gl = db.GLTrans.ToList();
+                    var gl = db.GLTrans.Where(c => c.CustomerID == id).Select(x => new
+                    {
+                        Date = x.TranDateTimeStamp,
+                        Detail = x.TranDetail.Replace('~', ' '),
+                        Debit = x.Debit,
+                        Credit = x.Credit,
+                    }).ToList();
                     dataGridView1.DataSource = gl;
+                    dataGridView1.Columns[0].HeaderText = "تاریخ";
+                    dataGridView1.Columns[1].HeaderText = "تفصیل";
+                    dataGridView1.Columns[2].HeaderText = "جمع";
+                    dataGridView1.Columns[3].HeaderText = "بنام";
                 }
                 
             }

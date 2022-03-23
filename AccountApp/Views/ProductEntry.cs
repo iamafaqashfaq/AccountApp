@@ -27,7 +27,10 @@ namespace AccountApp.Views
             {
                 var product = db.Products.ToList();
                 dataGridView1.DataSource = product;
-                dataGridView1.Columns[0].HeaderText = "Product Code";
+                dataGridView1.Columns[0].HeaderText = "جنس کوڈ";
+                dataGridView1.Columns[1].HeaderText = "جنس";
+                dataGridView1.Columns[2].HeaderText = "جنس قسم";
+
             }
         }
 

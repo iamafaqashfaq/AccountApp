@@ -50,16 +50,23 @@ namespace AccountApp.Views.ReportViews
 
                     var totalPending = totalcredit - totalDebit;
                     var customerdata = db.Customers.FirstOrDefault(c => c.Id == customer);
+                    string purchaseItem = "";
+                    double purchaseamount = 0;
+                    foreach(var d in data)
+                    {
+                        purchaseItem += d.Purchase;
+                        purchaseamount += d.PurchaseAmount;
+                    }
                     if(customerdata != null)
                     {
                         var custObj = new
                         {
                             CustomerID = customerdata.Id,
                             CustomerName = customerdata.Name,
-                            Purchase = data.Count > 0 ? data[0].Purchase : "",
-                            PurchaseAmount = data.Count > 0 ? data[0].PurchaseAmount : 0,
+                            Purchase = purchaseItem,
+                            PurchaseAmount = purchaseamount,
                             PreviousTotalPending = totalPending,
-                            NewTotalPending = data.Count > 0 ? data[0].PurchaseAmount + totalPending : totalPending,
+                            NewTotalPending = purchaseamount + totalPending,
                             Area = customerdata.Area,
                         };
                         recoveryList.Add(custObj);

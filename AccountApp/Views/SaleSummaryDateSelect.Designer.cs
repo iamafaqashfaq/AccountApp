@@ -43,11 +43,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 43);
+            this.label1.Location = new System.Drawing.Point(59, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Select Date";
+            this.label1.Text = "تاریخ";
             // 
             // button1
             // 
@@ -68,7 +68,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "SaleSummaryDateSelect";
-            this.Text = "Select Date";
+            this.Text = "سمری رپورٹ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -73,9 +73,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 15);
+            this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Customer Code";
+            this.label1.Text = "گاہک کوڈ";
             // 
             // textBox1
             // 
@@ -100,11 +100,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 53);
+            this.label2.Location = new System.Drawing.Point(112, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 15);
+            this.label2.Size = new System.Drawing.Size(48, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Customer Name";
+            this.label2.Text = "گاہک نام";
             // 
             // textBox3
             // 
@@ -120,9 +120,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(353, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.Size = new System.Drawing.Size(33, 15);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Quantity";
+            this.label3.Text = "تعداد";
             // 
             // textBox4
             // 
@@ -136,11 +136,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(412, 53);
+            this.label4.Location = new System.Drawing.Point(414, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 15);
+            this.label4.Size = new System.Drawing.Size(28, 15);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Rate";
+            this.label4.Text = "ریٹ";
             // 
             // textBox5
             // 
@@ -157,9 +157,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(499, 53);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 15);
+            this.label5.Size = new System.Drawing.Size(30, 15);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Commission";
+            this.label5.Text = "نگانہ";
             // 
             // textBox6
             // 
@@ -174,9 +174,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(579, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 15);
+            this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Total Amount";
+            this.label6.Text = "کل رقم";
             // 
             // textBox7
             // 
@@ -191,9 +191,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.Size = new System.Drawing.Size(48, 15);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Order Num";
+            this.label7.Text = "آرڈر نمبر";
             // 
             // textBox8
             // 
@@ -208,9 +208,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(177, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 15);
+            this.label8.Size = new System.Drawing.Size(32, 15);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Product";
+            this.label8.Text = "جنس";
             // 
             // textBox9
             // 
@@ -225,27 +225,27 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(457, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 15);
+            this.label9.Size = new System.Drawing.Size(35, 15);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Stock";
+            this.label9.Text = "سٹاک";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(606, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 15);
+            this.label10.Size = new System.Drawing.Size(55, 15);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Order Date: ";
+            this.label10.Text = "آرڈر تاریخ:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(623, 426);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 15);
+            this.label11.Size = new System.Drawing.Size(44, 15);
             this.label11.TabIndex = 20;
-            this.label11.Text = "Total:";
+            this.label11.Text = "کل رقم:";
             // 
             // label12
             // 
@@ -261,9 +261,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(412, 426);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(102, 15);
+            this.label13.Size = new System.Drawing.Size(50, 15);
             this.label13.TabIndex = 22;
-            this.label13.Text = "Total Commission";
+            this.label13.Text = "کل نگانہ:";
             // 
             // label14
             // 
@@ -288,9 +288,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(232, 426);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 15);
+            this.label16.Size = new System.Drawing.Size(49, 15);
             this.label16.TabIndex = 25;
-            this.label16.Text = "Total Sale:";
+            this.label16.Text = "کل سیل:";
             // 
             // OrderDetailsEntry
             // 

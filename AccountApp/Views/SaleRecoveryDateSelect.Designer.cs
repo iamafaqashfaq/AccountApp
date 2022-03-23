@@ -68,7 +68,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "SaleRecoveryDateSelect";
-            this.Text = "Recovery Date";
+            this.Text = "رکوری رپورٹ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

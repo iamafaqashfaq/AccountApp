@@ -37,6 +37,10 @@ namespace AccountApp.Views
                         Total = x.TotalAmount
                     }).ToList();
                 dataGridView1.DataSource = data;
+                dataGridView1.Columns[0].HeaderText = "آرڈر نمبر";
+                dataGridView1.Columns[1].HeaderText = "گاہک";
+                dataGridView1.Columns[2].HeaderText = "خرید";
+                dataGridView1.Columns[3].HeaderText = "کل رقم";
             }
         }
 
@@ -80,12 +84,14 @@ namespace AccountApp.Views
                 }
                 foreach(var item in data)
                 {
-                    var order = db.OrderDetails.FirstOrDefault(u => u.Id == item.OrderNum);
-                    if(order != null)
+                    var order = db.OrderDetails.Where(u => u.OrderNum == item.OrderNum);
+                    if(order.Count() > 0)
                     {
-                        order.Posted = true;
-                        db.Update(order);
-                        db.SaveChanges();
+                        foreach(var o in order)
+                        {
+                            o.Posted = true;
+                            db.SaveChanges();
+                        }
                     }
                 }
                 LoadGrid();

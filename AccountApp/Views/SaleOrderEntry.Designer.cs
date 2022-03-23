@@ -149,7 +149,7 @@
             this.groupBox1.Size = new System.Drawing.Size(776, 192);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Enter Order";
+            this.groupBox1.Text = "آرڈر انداج";
             // 
             // button6
             // 
@@ -157,7 +157,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(178, 31);
             this.button6.TabIndex = 18;
-            this.button6.Text = "Open Order Details";
+            this.button6.Text = "آرڈر تفصیل";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -173,11 +173,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(219, 142);
+            this.label9.Location = new System.Drawing.Point(287, 142);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 15);
+            this.label9.Size = new System.Drawing.Size(30, 15);
             this.label9.TabIndex = 16;
-            this.label9.Text = "WithoutCommision";
+            this.label9.Text = "نگانہ";
             // 
             // textBox8
             // 
@@ -190,11 +190,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(58, 142);
+            this.label8.Location = new System.Drawing.Point(37, 142);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 15);
+            this.label8.Size = new System.Drawing.Size(29, 15);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Sale";
+            this.label8.Text = "سیل";
             // 
             // textBox7
             // 
@@ -209,9 +209,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(488, 104);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 15);
+            this.label7.Size = new System.Drawing.Size(53, 15);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Sale Rate";
+            this.label7.Text = "سیل ریٹ";
             // 
             // textBox6
             // 
@@ -226,9 +226,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(252, 104);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 15);
+            this.label6.Size = new System.Drawing.Size(70, 15);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Sold Quantity";
+            this.label6.Text = "فروخت تعداد";
             // 
             // textBox5
             // 
@@ -242,9 +242,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(33, 104);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 15);
+            this.label5.Size = new System.Drawing.Size(33, 15);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Quantity";
+            this.label5.Text = "تعداد";
             // 
             // textBox4
             // 
@@ -258,9 +258,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(287, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
+            this.label4.Size = new System.Drawing.Size(32, 15);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Chalan";
+            this.label4.Text = "چالان";
             // 
             // textBox3
             // 
@@ -275,11 +275,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(247, 66);
+            this.label3.Location = new System.Drawing.Point(287, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 15);
+            this.label3.Size = new System.Drawing.Size(32, 15);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Product Name";
+            this.label3.Text = "جنس";
             // 
             // textBox2
             // 
@@ -294,11 +294,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 66);
+            this.label2.Location = new System.Drawing.Point(17, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 15);
+            this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Product Code";
+            this.label2.Text = "جنس کوڈ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
@@ -314,9 +314,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Order Num";
+            this.label1.Text = "آرڈر نمبر";
             // 
             // dataGridView1
             // 
@@ -352,7 +352,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "SaleOrderEntry";
-            this.Text = "Sale Order Entry";
+            this.Text = "آرڈر اینٹری";
             this.Load += new System.EventHandler(this.SaleOrderEntry_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

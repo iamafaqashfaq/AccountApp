@@ -52,6 +52,10 @@ namespace AccountApp.Views
                 label4.Text = total.ToString();
                 dataGridView1.DataSource = gl.ToList();
                 dataGridView1.Columns[0].Visible = false;
+                dataGridView1.Columns[0].HeaderText = "سیریل نمبر";
+                dataGridView1.Columns[1].HeaderText = "گاہک کوڈ";
+                dataGridView1.Columns[2].HeaderText = "گاہک";
+                dataGridView1.Columns[3].HeaderText = "بنام";
             }
         }
 

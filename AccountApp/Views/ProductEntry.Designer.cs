@@ -95,9 +95,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(60, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Product";
+            this.label1.Text = "جنس";
             // 
             // textBox2
             // 
@@ -109,11 +109,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(377, 48);
+            this.label2.Location = new System.Drawing.Point(359, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 15);
+            this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Type";
+            this.label2.Text = "جنس قسم";
             // 
             // ProductEntry
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "ProductEntry";
-            this.Text = "Product Entry";
+            this.Text = "مال جنس انٹری";
             this.Load += new System.EventHandler(this.ProductEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

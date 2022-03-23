@@ -65,11 +65,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 50);
+            this.label1.Location = new System.Drawing.Point(21, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Code";
+            this.label1.Text = "گاہک کوڈ";
             // 
             // textBox2
             // 
@@ -84,11 +84,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 51);
+            this.label2.Location = new System.Drawing.Point(196, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 15);
+            this.label2.Size = new System.Drawing.Size(48, 15);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Customer Name";
+            this.label2.Text = "گاہک نام";
             // 
             // textBox3
             // 
@@ -104,13 +104,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(568, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.Size = new System.Drawing.Size(24, 15);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Amount";
+            this.label3.Text = "رقم";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(61, 47);
+            this.textBox1.Location = new System.Drawing.Point(79, 47);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(83, 23);
             this.textBox1.TabIndex = 3;
@@ -124,9 +124,9 @@
             this.Total.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Total.Location = new System.Drawing.Point(577, 421);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(42, 20);
+            this.Total.Size = new System.Drawing.Size(53, 20);
             this.Total.TabIndex = 8;
-            this.Total.Text = "Total";
+            this.Total.Text = "کل رقم";
             // 
             // label4
             // 
@@ -144,9 +144,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(292, 420);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Total Pending";
+            this.label5.Text = "کل ادھار";
             // 
             // label6
             // 

@@ -49,7 +49,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 34);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Post";
+            this.button1.Text = "پوسٹ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -62,7 +62,7 @@
             this.Controls.Add(this.dataGridView1);
             this.MaximizeBox = false;
             this.Name = "PostSale";
-            this.Text = "Sale Posting";
+            this.Text = "Sale Posting/سیل پوسٹینگ";
             this.Load += new System.EventHandler(this.PostSale_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

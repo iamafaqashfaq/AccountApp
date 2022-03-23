@@ -115,6 +115,12 @@ namespace AccountApp.Views
                 }).ToList();
                 dataGridView1.DataSource = orderDtls;
                 dataGridView1.Columns[0].Visible = false;
+                dataGridView1.Columns[1].HeaderText = "جنس";
+                dataGridView1.Columns[2].HeaderText = "گاہک";
+                dataGridView1.Columns[3].HeaderText = "تعداد";
+                dataGridView1.Columns[4].HeaderText = "ریٹ";
+                dataGridView1.Columns[5].HeaderText = "نگانہ";
+                dataGridView1.Columns[6].HeaderText = "کل رقم";
             }
         }
         private void button5_Click(object sender, EventArgs e)
