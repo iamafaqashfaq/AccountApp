@@ -125,14 +125,15 @@ namespace AccountApp.Views
             {
                 using (var db = new DataContext())
                 {
+                    DateTime date = DateTime.Now.AddDays(-1);
                     var gl = new Models.GLTran();
                     gl.TranType = "BB";
                     gl.Debit = 0;
                     gl.Credit = Convert.ToDouble(textBox3.Text);
                     gl.TranAmount = Convert.ToDouble(textBox3.Text);
                     gl.TranDetail = "Beginning Balance";
-                    gl.TranDate = DateTime.Now;
-                    gl.TranDateTimeStamp = DateTime.Now.ToString();
+                    gl.TranDate = date;
+                    gl.TranDateTimeStamp = date.ToString();
                     gl.CustomerID = Convert.ToInt32(textBox1.Text);
                     db.GLTrans.Add(gl);
                     db.SaveChanges();

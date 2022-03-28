@@ -43,9 +43,9 @@ namespace AccountApp.Views.ReportViews
                         PurchaseAmount = x.Credit,
                     }).ToList();
 
-                    var totalcredit = db.GLTrans.Include(x => x.Customer).Where(c => c.CustomerID == customer &&
+                    var totalcredit = db.GLTrans.Where(c => c.CustomerID == customer &&
                     c.TranDate.Date < _date.Date).Sum(x => x.Credit);
-                    var totalDebit = db.GLTrans.Include(x => x.Customer).Where(c => c.CustomerID == customer &&
+                    var totalDebit = db.GLTrans.Where(c => c.CustomerID == customer &&
                     c.TranDate.Date < _date.Date).Sum(x => x.Debit);
 
                     var totalPending = totalcredit - totalDebit;

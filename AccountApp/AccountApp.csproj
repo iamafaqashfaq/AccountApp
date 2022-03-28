@@ -9,6 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\ReportViews\SaleRecoveryReport.rdlc" />
+    <None Remove="Views\ReportViews\SaleSummaryReport.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\ReportViews\SaleRecoveryReport.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\ReportViews\SaleSummaryReport.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
       <PrivateAssets>all</PrivateAssets>
@@ -60,9 +74,6 @@
     <None Update="Views\ReportViews\SaleSummaryDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SaleSummaryDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="Views\ReportViews\SaleSummaryReport.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\ReportViews\SaleSummaryTotalRecovery.xsd">
       <Generator>MSDataSetGenerator</Generator>
