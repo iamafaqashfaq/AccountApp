@@ -53,8 +53,15 @@ namespace AccountApp.Views
 
         private void SaleOrderEntry_Load(object sender, EventArgs e)
         {
+
             using (var db = new DataContext())
             {
+                var saleBook = db.SaleBooks.ToList();
+                comboBox1.DataSource = saleBook;
+                comboBox1.DisplayMember = "Name";
+                comboBox1.ValueMember = "Id";
+                comboBox1.SelectedIndex = 0;
+                
                 products = db.Products.ToList();
             }
             LoadOrder();
@@ -96,6 +103,7 @@ namespace AccountApp.Views
             {
                 textBox3.Text = check.Name + " | " + check.Type;
             }
+            comboBox1.SelectedValue = Orders[currentIndex].SaleBookId;
             textBox5.Text = Orders[currentIndex].Quantity.ToString();
             textBox6.Text = Orders[currentIndex].SoldQuantity.ToString();
             textBox7.Text = Orders[currentIndex].SaleRate.ToString();
@@ -161,6 +169,7 @@ namespace AccountApp.Views
                     TextBox? textBox = (control as TextBox);
                     textBox!.Clear();
                 }
+            comboBox1.SelectedIndex = 0;
             dataGridView1.DataSource = null;
             textBox1.Text = "0";
             createClicked = true;
@@ -177,6 +186,7 @@ namespace AccountApp.Views
                     order.ProductCode = Convert.ToInt32(textBox2.Text);
                     order.Quantity = Convert.ToInt32(textBox5.Text);
                     order.OrderDate = dateTimePicker1.Value;
+                    order.SaleBookId = Convert.ToInt32(comboBox1.SelectedValue);
                     db.Orders.Add(order);
                     db.SaveChanges();
                     LoadOrder();
@@ -192,7 +202,8 @@ namespace AccountApp.Views
                     Orders[currentIndex].ProductCode = Convert.ToInt32(textBox2.Text);
                     Orders[currentIndex].Quantity = Convert.ToInt32(textBox5.Text);
                     Orders[currentIndex].OrderDate = dateTimePicker1.Value;
-                    db.Update(Orders[currentIndex]);
+                    Orders[currentIndex].SaleBookId = Convert.ToInt32(comboBox1.SelectedValue);
+                        db.Update(Orders[currentIndex]);
                     db.SaveChanges();
                     LoadControls();
                 }

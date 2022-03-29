@@ -3,6 +3,7 @@ using System;
 using AccountApp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccountApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220329124016_AddedSalesBook")]
+    partial class AddedSalesBook
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.3");
@@ -127,9 +129,6 @@ namespace AccountApp.Migrations
                     b.Property<double>("Sale")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("SaleBookId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<double>("SaleRate")
                         .HasColumnType("REAL");
 
@@ -142,8 +141,6 @@ namespace AccountApp.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ProductCode");
-
-                    b.HasIndex("SaleBookId");
 
                     b.ToTable("Orders");
                 });
@@ -178,9 +175,6 @@ namespace AccountApp.Migrations
                     b.Property<double>("Rate")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("SaleBookId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<double>("TotalAmount")
                         .HasColumnType("REAL");
 
@@ -191,8 +185,6 @@ namespace AccountApp.Migrations
                     b.HasIndex("OrderNum");
 
                     b.HasIndex("ProductID");
-
-                    b.HasIndex("SaleBookId");
 
                     b.ToTable("OrderDetails");
                 });
@@ -281,15 +273,7 @@ namespace AccountApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AccountApp.Models.SaleBook", "SaleBook")
-                        .WithMany()
-                        .HasForeignKey("SaleBookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Product");
-
-                    b.Navigation("SaleBook");
                 });
 
             modelBuilder.Entity("AccountApp.Models.OrderDetails", b =>
@@ -312,19 +296,11 @@ namespace AccountApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AccountApp.Models.SaleBook", "SaleBook")
-                        .WithMany()
-                        .HasForeignKey("SaleBookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Customer");
 
                     b.Navigation("Order");
 
                     b.Navigation("Product");
-
-                    b.Navigation("SaleBook");
                 });
 #pragma warning restore 612, 618
         }

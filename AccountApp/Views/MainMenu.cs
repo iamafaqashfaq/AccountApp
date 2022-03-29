@@ -81,5 +81,16 @@ namespace AccountApp.Views
             SaleRecoveryDateSelect saleRecoveryDateSelect = new SaleRecoveryDateSelect();
             saleRecoveryDateSelect.ShowDialog();
         }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void saleBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaleBook saleBook = new SaleBook();
+            saleBook.ShowDialog();
+        }
     }
 }

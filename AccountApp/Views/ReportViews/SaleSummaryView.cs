@@ -56,6 +56,19 @@ namespace AccountApp.Views.ReportViews
                 reportViewer1.LocalReport.LoadReportDefinition(fs);
                 reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", data));
                 reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", recoveryData));
+                var saleBooks = db.SaleBooks.ToList();
+                List<object> CashSummary = new List<object>();
+                foreach(var saleBook in saleBooks)
+                {
+                    var orderDtls = db.OrderDetails.Where(o => o.OrderDetailDate.Date == _date.Date && o.SaleBookId == saleBook.Id && o.CustomerID == 1).Sum(o => o.TotalAmount);
+                    Object cash = new
+                    {
+                        SaleBook = saleBook.Name,
+                        Cash = orderDtls
+                    };
+                    CashSummary.Add(cash);
+                }
+                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet3", CashSummary));
                 reportViewer1.LocalReport.SetParameters(parameters);
                 reportViewer1.RefreshReport();
             }

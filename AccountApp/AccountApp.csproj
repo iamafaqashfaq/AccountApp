@@ -42,6 +42,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\ReportViews\SaleCash.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaleCash.xsd</DependentUpon>
+    </Compile>
     <Compile Update="Views\ReportViews\SaleRecoveryDataSet.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -67,6 +72,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Views\ReportViews\SaleCash.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleCash.Designer.cs</LastGenOutput>
+    </None>
     <None Update="Views\ReportViews\SaleRecoveryDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SaleRecoveryDataSet.Designer.cs</LastGenOutput>

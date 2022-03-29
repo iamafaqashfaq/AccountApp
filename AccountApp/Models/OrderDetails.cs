@@ -25,5 +25,8 @@ namespace AccountApp.Models
         public Order? Order { get; set; }
         public Customer? Customer { get; set; }
         public Product? Product { get; set; }
+        [ForeignKey("SaleBook")]
+        public int SaleBookId { get; set; }
+        public SaleBook? SaleBook { get; set; }
     }
 }

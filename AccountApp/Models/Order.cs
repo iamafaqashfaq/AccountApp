@@ -21,5 +21,8 @@ namespace AccountApp.Models
         public double SaleRate { get; set; }
         public double Sale { get; set; }
         public double SaleWithoutCommission { get; set; }
+        [ForeignKey("SaleBook")]
+        public int SaleBookId { get; set; }
+        public SaleBook? SaleBook { get; set; }
     }
 }

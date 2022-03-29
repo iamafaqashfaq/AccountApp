@@ -73,11 +73,12 @@ namespace AccountApp.Views.ReportViews
                     }
                 }
 
-
+                var parameters = new[] { new ReportParameter("ReportDate", _date.ToString("dd-MM-yyyy")) };
                 using var fs = new FileStream("../../../Views/ReportViews/SaleRecoveryReport.rdlc", FileMode.Open);
                 reportViewer1.LocalReport.LoadReportDefinition(fs);
                 reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", recoveryList));
                 //reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", recoveryData));
+                reportViewer1.LocalReport.SetParameters(parameters);
                 reportViewer1.RefreshReport();
             }
         }

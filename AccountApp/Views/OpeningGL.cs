@@ -23,7 +23,7 @@ namespace AccountApp.Views
         {
             using (var db = new DataContext())
             {
-                Customers = db.Customers.ToList();
+                Customers = db.Customers.Where(x => x.Name != "نقدی" && x.Id != 1).ToList();
                 AutoCompleteStringCollection custCollection = new AutoCompleteStringCollection();
                 foreach (var customer in Customers)
                 {

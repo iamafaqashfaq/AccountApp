@@ -219,6 +219,7 @@ namespace AccountApp.Views
                     orderDetails.Rate = Convert.ToDouble(textBox4.Text);
                     orderDetails.Commission = Convert.ToDouble(textBox5.Text);
                     orderDetails.TotalAmount = total;
+                    orderDetails.SaleBookId = order.SaleBookId;
                     db.OrderDetails.Add(orderDetails);
                     db.SaveChanges();
                     LoadGrid();

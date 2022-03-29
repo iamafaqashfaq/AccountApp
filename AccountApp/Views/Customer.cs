@@ -23,6 +23,14 @@ namespace AccountApp.Views
         {
             using(var db = new DataContext())
             {
+                var cash = db.Customers.FirstOrDefault(x => x.Id == 1 && x.Name == "نقدی");
+                if (cash == null)
+                {
+                    Models.Customer c = new Models.Customer();
+                    c.Name = "نقدی";
+                    db.Customers.Add(c);
+                    db.SaveChanges();
+                }
                 areas = db.Areas.ToList();
                 AutoCompleteStringCollection myCol = new AutoCompleteStringCollection();
                 foreach(var area in areas)
@@ -38,7 +46,7 @@ namespace AccountApp.Views
         {
             using (var db = new DataContext())
             {
-                var cust = db.Customers.ToList();
+                var cust = db.Customers.Where(x => x.Name != "نقدی" && x.Id != 1).ToList();
                 dataGridView2.DataSource = cust;
                 ////dataGridView2.Columns[0].Visible = false;
                 dataGridView2.Columns[0].HeaderText = "گاہک کوڈ";
