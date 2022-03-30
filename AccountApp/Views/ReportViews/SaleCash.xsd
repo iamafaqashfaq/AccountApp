@@ -9,14 +9,15 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="SaleCash" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="SaleCash" msprop:Generator_DataSetName="SaleCash">
+  <xs:element name="SaleCash" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SaleCash" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SaleCash">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_UserTableName="DataTable1">
+        <xs:element name="DataTable1" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="SaleBook" msprop:Generator_ColumnPropNameInRow="SaleBook" msprop:Generator_ColumnPropNameInTable="SaleBookColumn" msprop:Generator_ColumnVarNameInTable="columnSaleBook" msprop:Generator_UserColumnName="SaleBook" type="xs:string" minOccurs="0" />
-              <xs:element name="Cash" msprop:Generator_ColumnPropNameInRow="Cash" msprop:Generator_ColumnPropNameInTable="CashColumn" msprop:Generator_ColumnVarNameInTable="columnCash" msprop:Generator_UserColumnName="Cash" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleBook" msprop:Generator_UserColumnName="SaleBook" msprop:Generator_ColumnPropNameInTable="SaleBookColumn" msprop:Generator_ColumnPropNameInRow="SaleBook" msprop:Generator_ColumnVarNameInTable="columnSaleBook" type="xs:string" minOccurs="0" />
+              <xs:element name="Cash" msprop:Generator_UserColumnName="Cash" msprop:Generator_ColumnPropNameInTable="CashColumn" msprop:Generator_ColumnPropNameInRow="Cash" msprop:Generator_ColumnVarNameInTable="columnCash" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

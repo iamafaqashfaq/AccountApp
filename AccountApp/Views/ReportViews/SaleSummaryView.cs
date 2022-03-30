@@ -61,10 +61,12 @@ namespace AccountApp.Views.ReportViews
                 foreach(var saleBook in saleBooks)
                 {
                     var orderDtls = db.OrderDetails.Where(o => o.OrderDetailDate.Date == _date.Date && o.SaleBookId == saleBook.Id && o.CustomerID == 1).Sum(o => o.TotalAmount);
+                    var orderDtlsTotal = db.OrderDetails.Where(o => o.OrderDetailDate.Date == _date.Date && o.SaleBookId == saleBook.Id && o.CustomerID != 1).Sum(o => o.TotalAmount);
                     Object cash = new
                     {
                         SaleBook = saleBook.Name,
-                        Cash = orderDtls
+                        Cash = orderDtls,
+                        Total = orderDtlsTotal
                     };
                     CashSummary.Add(cash);
                 }
