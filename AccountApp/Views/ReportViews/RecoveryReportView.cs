@@ -59,17 +59,22 @@ namespace AccountApp.Views.ReportViews
                     }
                     if(customerdata != null)
                     {
-                        var custObj = new
+                        var checkTotalPending = Convert.ToInt32(purchaseamount + totalPending);
+                        if (checkTotalPending != 0)
                         {
-                            CustomerID = customerdata.Id,
-                            CustomerName = customerdata.Name,
-                            Purchase = purchaseItem,
-                            PurchaseAmount = purchaseamount,
-                            PreviousTotalPending = totalPending,
-                            NewTotalPending = purchaseamount + totalPending,
-                            Area = customerdata.Area,
-                        };
-                        recoveryList.Add(custObj);
+                            var custObj = new
+                            {
+                                CustomerID = customerdata.Id,
+                                CustomerName = customerdata.Name,
+                                Purchase = purchaseItem,
+                                PurchaseAmount = purchaseamount,
+                                PreviousTotalPending = totalPending,
+                                NewTotalPending = purchaseamount + totalPending,
+                                Area = customerdata.Area,
+                            };
+                            recoveryList.Add(custObj);
+                        }
+                        
                     }
                 }
 
