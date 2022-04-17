@@ -205,5 +205,15 @@ namespace AccountApp.Views
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(custId != 0)
+            {
+                Views.ReportViews.CustomerHistory customerHistory = new ReportViews.CustomerHistory(custId);
+                customerHistory.Show();
+            }
+            
+        }
     }
 }

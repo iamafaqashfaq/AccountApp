@@ -9,11 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\ReportViews\CustomerHistory.rdlc" />
     <None Remove="Views\ReportViews\SaleRecoveryReport.rdlc" />
     <None Remove="Views\ReportViews\SaleSummaryReport.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Views\ReportViews\CustomerHistory.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\ReportViews\SaleRecoveryReport.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -41,6 +45,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ReportViews\Customer.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Customer.xsd</DependentUpon>
     </Compile>
     <Compile Update="Views\ReportViews\SaleCash.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -72,6 +81,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Views\ReportViews\Customer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Customer.Designer.cs</LastGenOutput>
+    </None>
     <None Update="Views\ReportViews\SaleCash.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SaleCash.Designer.cs</LastGenOutput>

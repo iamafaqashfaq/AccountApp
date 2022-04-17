@@ -47,6 +47,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sqliteCommand1 = new Microsoft.Data.Sqlite.SqliteCommand();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -219,6 +220,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
@@ -244,6 +246,16 @@
             this.sqliteCommand1.Connection = null;
             this.sqliteCommand1.Transaction = null;
             this.sqliteCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(709, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Print";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Customer
             // 
@@ -285,5 +297,6 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Button button4;
     }
 }
