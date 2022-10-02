@@ -328,7 +328,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -635,7 +634,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-7658840:بنیامین</Value>
+                      <Value>068-5883895:دکان</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -669,7 +668,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-8278840</Value>
+                      <Value>068-5889017</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -734,7 +733,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>BMC</Value>
+                      <Value>BFC</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -769,7 +768,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-6728371:ظفر اقبال</Value>
+                      <Value>0300-6728371:منیر احمد</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -804,7 +803,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-8545371</Value>
+                      <Value>0300-8545371:محمد ناصر سلیم</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -820,7 +819,7 @@
               <Top>0.76928cm</Top>
               <Left>0.00001cm</Left>
               <Height>0.9175cm</Height>
-              <Width>3.63771cm</Width>
+              <Width>4.66958cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -846,7 +845,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین،ظفر اقبال</Value>
+                      <Value>محمد ظہیر، منیر احمد</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -857,9 +856,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>1.3781cm</Top>
-              <Left>4.71524cm</Left>
+              <Left>4.4491cm</Left>
               <Height>1.07625cm</Height>
-              <Width>2.5cm</Width>
+              <Width>2.76614cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -878,17 +877,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین </Value>
+                      <Value>بسم اللہ فروٹ کمپنی</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>60pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>احمد اینڈ کو</Value>
-                      <Style>
-                        <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>36pt</FontSize>
+                        <FontSize>40pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -953,7 +945,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>تار کا پتہ: عمیر اقبال</Value>
+                      <Value>تار کا پتہ:شفیق</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -988,7 +980,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>دکان نمبر 6 نیو سبزی منڈی، رحیم یار خان</Value>
+                      <Value>دکان نمبر 7 نیو سبزی منڈی، رحیم یار خان</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>

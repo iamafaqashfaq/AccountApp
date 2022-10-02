@@ -33,6 +33,7 @@
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openingBalanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.saleBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -75,23 +75,30 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // areaToolStripMenuItem
             // 
             this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            this.areaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.areaToolStripMenuItem.Text = "Area";
             this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
             // 
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
-            this.productsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productsToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.productsToolStripMenuItem.Text = "Products";
             this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
+            // 
+            // saleBookToolStripMenuItem
+            // 
+            this.saleBookToolStripMenuItem.Name = "saleBookToolStripMenuItem";
+            this.saleBookToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.saleBookToolStripMenuItem.Text = "Sale Book";
+            this.saleBookToolStripMenuItem.Click += new System.EventHandler(this.saleBookToolStripMenuItem_Click);
             // 
             // accountsToolStripMenuItem
             // 
@@ -192,21 +199,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::AccountApp.Properties.Resources.Untitled_1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = global::AccountApp.Properties.Resources.Untitled_1;
+            this.pictureBox1.BackgroundImage = global::AccountApp.Properties.Resources.Cover;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(12, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(565, 423);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // saleBookToolStripMenuItem
-            // 
-            this.saleBookToolStripMenuItem.Name = "saleBookToolStripMenuItem";
-            this.saleBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saleBookToolStripMenuItem.Text = "Sale Book";
-            this.saleBookToolStripMenuItem.Click += new System.EventHandler(this.saleBookToolStripMenuItem_Click);
             // 
             // MainMenu
             // 

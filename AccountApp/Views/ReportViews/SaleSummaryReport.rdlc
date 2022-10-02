@@ -1560,7 +1560,7 @@
       <Width>7.68253in</Width>
       <Page>
         <PageHeader>
-          <Height>3.84746cm</Height>
+          <Height>3.85147cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1571,7 +1571,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-7658840:بنیامین</Value>
+                      <Value>068-5883895:دکان</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1585,7 +1585,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox12</rd:DefaultName>
               <Top>1.6546cm</Top>
-              <Left>0.5468cm</Left>
+              <Left>0.55767cm</Left>
               <Height>0.94396cm</Height>
               <Width>3.90229cm</Width>
               <Style>
@@ -1605,7 +1605,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-8278840</Value>
+                      <Value>068-5889017</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1619,7 +1619,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox13</rd:DefaultName>
               <Top>2.33397cm</Top>
-              <Left>0.17638cm</Left>
+              <Left>0.18725cm</Left>
               <Height>0.9175cm</Height>
               <Width>3.63771cm</Width>
               <ZIndex>1</ZIndex>
@@ -1650,7 +1650,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
               <Top>0.02244cm</Top>
-              <Left>5.49792cm</Left>
+              <Left>5.50879cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>2</ZIndex>
@@ -1671,7 +1671,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>BMC</Value>
+                      <Value>BFC</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1685,7 +1685,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
               <Top>0.62244cm</Top>
-              <Left>5.49792cm</Left>
+              <Left>5.50879cm</Left>
               <Height>0.65292cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>3</ZIndex>
@@ -1706,7 +1706,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-6728371:ظفر اقبال</Value>
+                      <Value>0300-6728371:منیر احمد</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1720,7 +1720,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox12</rd:DefaultName>
               <Top>0.05772cm</Top>
-              <Left>0.5468cm</Left>
+              <Left>0.55767cm</Left>
               <Height>0.94396cm</Height>
               <Width>4.29917cm</Width>
               <ZIndex>4</ZIndex>
@@ -1741,7 +1741,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-8545371</Value>
+                      <Value>0300-8545371:محمد ناصر سلیم</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1755,9 +1755,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox13</rd:DefaultName>
               <Top>0.7371cm</Top>
-              <Left>0.17639cm</Left>
+              <Left>0.18726cm</Left>
               <Height>0.9175cm</Height>
-              <Width>3.63771cm</Width>
+              <Width>4.66958cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -1783,7 +1783,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین،ظفر اقبال</Value>
+                      <Value>محمد ظہیر، منیر احمد</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -1793,10 +1793,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox18</rd:DefaultName>
-              <Top>1.88017cm</Top>
-              <Left>4.75051cm</Left>
+              <Top>1.34592cm</Top>
+              <Left>4.63635cm</Left>
               <Height>1.07625cm</Height>
-              <Width>2.5cm</Width>
+              <Width>2.76614cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -1815,17 +1815,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین </Value>
+                      <Value>بسم اللہ فروٹ کمپنی</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>60pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>احمد اینڈ کو</Value>
-                      <Style>
-                        <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>36pt</FontSize>
+                        <FontSize>40pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1835,8 +1828,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox19</rd:DefaultName>
-              <Left>11.77898cm</Left>
-              <Height>3.11036cm</Height>
+              <Left>11.78985cm</Left>
+              <Height>3.25147cm</Height>
               <Width>7.53653cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
@@ -1868,7 +1861,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
               <Top>1.99482cm</Top>
-              <Left>7.39162cm</Left>
+              <Left>7.40249cm</Left>
               <Height>0.89104cm</Height>
               <Width>4.21097cm</Width>
               <ZIndex>8</ZIndex>
@@ -1889,7 +1882,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>تار کا پتہ: عمیر اقبال</Value>
+                      <Value>تار کا پتہ:شفیق</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -1902,9 +1895,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>2.88586cm</Top>
-              <Left>7.39162cm</Left>
-              <Height>0.89104cm</Height>
+              <Top>2.30377cm</Top>
+              <Left>3.86024cm</Left>
+              <Height>0.84187cm</Height>
               <Width>4.21097cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
@@ -1924,7 +1917,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>دکان نمبر 6 نیو سبزی منڈی، رحیم یار خان</Value>
+                      <Value>دکان نمبر 7 نیو سبزی منڈی، رحیم یار خان</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1938,7 +1931,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
               <Top>2.85059cm</Top>
-              <Left>11.77898cm</Left>
+              <Left>11.78985cm</Left>
               <Height>0.89104cm</Height>
               <Width>7.53653cm</Width>
               <ZIndex>10</ZIndex>
@@ -1957,7 +1950,7 @@
               <Value>download</Value>
               <Sizing>FitProportional</Sizing>
               <Top>0.03373cm</Top>
-              <Left>8.17431cm</Left>
+              <Left>8.18518cm</Left>
               <Height>1.89054cm</Height>
               <Width>3.42828cm</Width>
               <ZIndex>11</ZIndex>
@@ -1967,6 +1960,104 @@
                 </Border>
               </Style>
             </Image>
+            <Textbox Name="Textbox32">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Page " + Globals!PageNumber.ToString() + " of " + Globals!TotalPages.ToString()</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox32</rd:DefaultName>
+              <Top>3.25147cm</Top>
+              <Left>0.22408cm</Left>
+              <Height>0.6cm</Height>
+              <Width>4.77224cm</Width>
+              <ZIndex>12</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox139">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Date</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox139</rd:DefaultName>
+              <Top>3.25147cm</Top>
+              <Left>5.06687cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>13</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox140">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!ReportDate.Value</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox139</rd:DefaultName>
+              <Top>3.25147cm</Top>
+              <Left>7.9206cm</Left>
+              <Height>0.6cm</Height>
+              <Width>3.69286cm</Width>
+              <ZIndex>14</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>

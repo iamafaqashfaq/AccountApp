@@ -1273,7 +1273,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-7658840:بنیامین</Value>
+                      <Value>068-5883895:دکان</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1286,8 +1286,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox12</rd:DefaultName>
-              <Top>1.6546cm</Top>
-              <Left>0.37042cm</Left>
+              <Top>1.70738cm</Top>
+              <Left>0.41657cm</Left>
               <Height>0.94396cm</Height>
               <Width>3.90229cm</Width>
               <Style>
@@ -1307,7 +1307,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0301-8278840</Value>
+                      <Value>068-5889017</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1320,7 +1320,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>2.33397cm</Top>
+              <Top>2.38676cm</Top>
+              <Left>0.04615cm</Left>
               <Height>0.9175cm</Height>
               <Width>3.63771cm</Width>
               <ZIndex>1</ZIndex>
@@ -1350,8 +1351,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.02244cm</Top>
-              <Left>5.32154cm</Left>
+              <Top>0.07522cm</Top>
+              <Left>5.36769cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>2</ZIndex>
@@ -1372,7 +1373,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>BMC</Value>
+                      <Value>BFC</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -1385,8 +1386,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox14</rd:DefaultName>
-              <Top>0.62244cm</Top>
-              <Left>5.32154cm</Left>
+              <Top>0.67522cm</Top>
+              <Left>5.36769cm</Left>
               <Height>0.65292cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>3</ZIndex>
@@ -1407,7 +1408,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-6728371:ظفر اقبال</Value>
+                      <Value>0300-6728371:منیر احمد</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1420,8 +1421,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox12</rd:DefaultName>
-              <Top>0.05772cm</Top>
-              <Left>0.37042cm</Left>
+              <Top>0.1105cm</Top>
+              <Left>0.41657cm</Left>
               <Height>0.94396cm</Height>
               <Width>4.29917cm</Width>
               <ZIndex>4</ZIndex>
@@ -1442,7 +1443,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>0300-8545371</Value>
+                      <Value>0300-8545371:محمد ناصر سلیم</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1455,10 +1456,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>0.7371cm</Top>
-              <Left>0.00001cm</Left>
+              <Top>0.78988cm</Top>
+              <Left>0.04616cm</Left>
               <Height>0.9175cm</Height>
-              <Width>3.63771cm</Width>
+              <Width>4.66958cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -1484,7 +1485,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین،ظفر اقبال</Value>
+                      <Value>محمد ظہیر، منیر احمد</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -1494,10 +1495,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox18</rd:DefaultName>
-              <Top>1.34592cm</Top>
-              <Left>4.71524cm</Left>
+              <Top>1.3987cm</Top>
+              <Left>4.49525cm</Left>
               <Height>1.07625cm</Height>
-              <Width>2.5cm</Width>
+              <Width>2.76614cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -1516,17 +1517,10 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>بنیامین </Value>
+                      <Value>بسم اللہ فروٹ کمپنی</Value>
                       <Style>
                         <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>60pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>احمد اینڈ کو</Value>
-                      <Style>
-                        <FontFamily>alvi Nastaleeq</FontFamily>
-                        <FontSize>36pt</FontSize>
+                        <FontSize>40pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1536,7 +1530,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox19</rd:DefaultName>
-              <Left>11.6026cm</Left>
+              <Top>0.05278cm</Top>
+              <Left>11.64875cm</Left>
               <Height>3.25147cm</Height>
               <Width>7.53653cm</Width>
               <ZIndex>7</ZIndex>
@@ -1568,8 +1563,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>1.99482cm</Top>
-              <Left>7.21524cm</Left>
+              <Top>2.0476cm</Top>
+              <Left>7.26139cm</Left>
               <Height>0.89104cm</Height>
               <Width>4.21097cm</Width>
               <ZIndex>8</ZIndex>
@@ -1590,7 +1585,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>تار کا پتہ: عمیر اقبال</Value>
+                      <Value>تار کا پتہ:شفیق</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -1603,8 +1598,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>2.30377cm</Top>
-              <Left>3.67299cm</Left>
+              <Top>2.35656cm</Top>
+              <Left>3.71914cm</Left>
               <Height>0.84187cm</Height>
               <Width>4.21097cm</Width>
               <ZIndex>9</ZIndex>
@@ -1625,7 +1620,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>دکان نمبر 6 نیو سبزی منڈی، رحیم یار خان</Value>
+                      <Value>دکان نمبر 7 نیو سبزی منڈی، رحیم یار خان</Value>
                       <Style>
                         <FontFamily>Alvi Nastaleeq</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1638,8 +1633,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>2.85059cm</Top>
-              <Left>11.6026cm</Left>
+              <Top>2.90337cm</Top>
+              <Left>11.64875cm</Left>
               <Height>0.89104cm</Height>
               <Width>7.53653cm</Width>
               <ZIndex>10</ZIndex>
@@ -1657,8 +1652,8 @@
               <Source>Embedded</Source>
               <Value>download</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.03373cm</Top>
-              <Left>7.99793cm</Left>
+              <Top>0.08651cm</Top>
+              <Left>8.04408cm</Left>
               <Height>1.89054cm</Height>
               <Width>3.42828cm</Width>
               <ZIndex>11</ZIndex>
@@ -1683,8 +1678,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox32</rd:DefaultName>
-              <Top>3.25147cm</Top>
-              <Left>0.03683cm</Left>
+              <Top>3.30426cm</Top>
+              <Left>0.08298cm</Left>
               <Height>0.6cm</Height>
               <Width>4.77224cm</Width>
               <ZIndex>12</ZIndex>
@@ -1717,8 +1712,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox139</rd:DefaultName>
-              <Top>3.25147cm</Top>
-              <Left>4.87962cm</Left>
+              <Top>3.30426cm</Top>
+              <Left>4.92577cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>13</ZIndex>
@@ -1751,8 +1746,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox139</rd:DefaultName>
-              <Top>3.25147cm</Top>
-              <Left>7.73335cm</Left>
+              <Top>3.30426cm</Top>
+              <Left>7.7795cm</Left>
               <Height>0.6cm</Height>
               <Width>3.69286cm</Width>
               <ZIndex>14</ZIndex>
